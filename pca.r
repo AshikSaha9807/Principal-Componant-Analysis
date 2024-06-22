@@ -2,10 +2,10 @@ library('corrr')
 library(ggcorrplot)
 library(factoextra)
 library("FactoMineR")
-data <- read.csv("root_var.csv")
+data <- read.csv("crop.data.csv")
 str(protein_data)
 colSums(is.na(protein_data))
-numerical_data <- data[,4:20]
+numerical_data <- data[,1:4]
 
 head(numerical_data)
 data_normalized <- scale(numerical_data)
